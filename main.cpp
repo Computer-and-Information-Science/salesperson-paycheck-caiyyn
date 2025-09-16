@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -9,26 +10,26 @@ int main() {
     string filename;
     string firstName, lastName;
     double baseSalary, commissionPercent, totalSales, expenses;
-
+    
+    // get file name from user
     cout << "Enter the name of the file: ";
     cin >> filename;
-
+    
+    // open the file
     ifstream inputFile(filename);
-
-    if (!inputFile.is_open()) {
-        cerr << "Error: Could not open the file " << filename << endl;
-        return 1;
-    }
-
+    
+    // input employee information
     inputFile >> firstName >> lastName;
     inputFile >> baseSalary >> commissionPercent;
     inputFile >> totalSales;
     inputFile >> expenses;
     inputFile.close();
-
+    
+    // calculate commission and total pay
     double commission = totalSales * (commissionPercent / 100.0);
     double totalPay = baseSalary + commission - expenses;
-
+   
+    // output payroll data
     cout << fixed << setprecision(2);
     cout << "Payroll data for " << firstName << " " << lastName << endl << endl;
     cout << "Base Salary:    " << setw(9) << baseSalary << endl;
