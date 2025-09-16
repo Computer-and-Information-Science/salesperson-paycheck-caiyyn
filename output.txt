@@ -1,0 +1,6 @@
+Payroll data for  
+Base Salary:        0.00
+Commission:         0.00 (0.00% of 0.00)
+Expenses:           0.00
+              --------
+Total:             0.00

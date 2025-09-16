@@ -7,7 +7,7 @@ Write a program that will accept as input *from a file* the following informatio
 * The employee's first name, last name (both string with no spaces)
 * The employee's base salary and commission percent (both double)
 * The employee's total sales (double)
-* The employee's expenses (double)
+* The employee's expenses (double) 
 
 Your program should calculate the details of the employee's gross pay (total pay without regard to taxes), and output the information to the screen. Your output should be consistent with the sample output below.
 
